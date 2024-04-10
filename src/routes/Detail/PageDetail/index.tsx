@@ -20,4 +20,10 @@ export default PageDetail
 const StyledWrapper = styled.div`
   margin: 0 auto;
   max-width: 56rem;
+
+  .notion-list-disc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 `
