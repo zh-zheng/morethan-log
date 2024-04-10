@@ -1,7 +1,7 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "OpenBMB Blog",
+    name: "OpenBMB",
     image: "/OpenBMB.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Open Lab for Big Model Base",
     bio: "Founded by ModelBest Inc (面壁智能) & TsinghuaNLP, aims to build foundation models and systems towards AGI.",
@@ -10,12 +10,6 @@ const CONFIG = {
     github: "OpenBMB",
     instagram: "",
   },
-  projects: [
-    {
-      name: `OpenBMB Blog`,
-      href: "https://github.com/OpenBMB",
-    },
-  ],
   // blog setting (required)
   blog: {
     title: "OpenBMB Blog",
@@ -23,8 +17,8 @@ const CONFIG = {
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
+  link: "https://openbmb.vercel.app",
+  since: 2024, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
