@@ -18,9 +18,6 @@ const useScheme = (): [Scheme, SetScheme] => {
 
   const scheme = data === "light" ? "light" : "dark"
 
-  console.log("get from react query")
-  console.log(scheme)
-
   const setScheme = (scheme: "light" | "dark") => {
     setCookie("scheme", scheme)
 
@@ -31,9 +28,6 @@ const useScheme = (): [Scheme, SetScheme] => {
     if (!window) return
 
     const scheme = getCookie("scheme")
-
-    console.log("get from cookie")
-    console.log(scheme)
 
     setScheme(scheme === "light" ? "light" : "dark")
   }, [])
