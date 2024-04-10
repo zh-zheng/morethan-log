@@ -10,6 +10,7 @@ const CONFIG = {
     github: "OpenBMB",
     instagram: "",
   },
+  projects: [],
   // blog setting (required)
   blog: {
     title: "OpenBMB Blog",
