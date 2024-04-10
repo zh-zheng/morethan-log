@@ -24,6 +24,7 @@ const CONFIG = {
   blog: {
     title: "OpenBMB Blog",
     description: "Welcome to OpenBMB blog!",
+    theme: "light"
   },
 
   // CONFIG configration (required)
