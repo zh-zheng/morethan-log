@@ -1,25 +1,25 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    name: "OpenBMB Blog",
+    image: "/OpenBMB.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "Open Lab for Big Model Base",
+    bio: "Founded by ModelBest Inc (面壁智能) & TsinghuaNLP, aims to build foundation models and systems towards AGI.",
+    email: "openbmb@gmail.com",
+    linkedin: "",
+    github: "OpenBMB",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `OpenBMB Blog`,
+      href: "https://github.com/OpenBMB",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
+    title: "OpenBMB Blog",
+    description: "Welcome to OpenBMB blog!",
   },
 
   // CONFIG configration (required)
@@ -53,7 +53,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: true,
+    enable: false,
     config: {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
