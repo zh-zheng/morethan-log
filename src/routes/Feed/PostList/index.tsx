@@ -35,7 +35,7 @@ const PostList: React.FC<Props> = ({ q }) => {
       }
 
       // category
-      if (currentCategory !== DEFAULT_CATEGORY) {
+      if (currentCategory) {
         newFilteredPosts = newFilteredPosts.filter(
           (post) =>
             post && post.category && post.category.includes(currentCategory)
