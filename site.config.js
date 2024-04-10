@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "OpenBMB",
-    image: "/OpenBMB.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/OpenBMB_alpha.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Open Lab for Big Model Base",
     bio: "Founded by ModelBest Inc (面壁智能) & TsinghuaNLP, aims to build foundation models and systems towards AGI.",
     email: "openbmb@gmail.com",
@@ -10,7 +10,16 @@ const CONFIG = {
     github: "OpenBMB",
     instagram: "",
   },
-  projects: [],
+  projects: [
+    {
+      name: `MiniCPM`,
+      href: "https://github.com/OpenBMB/MiniCPM",
+    },
+    {
+      name: `OmniLMM`,
+      href: "https://github.com/OpenBMB/OmniLMM",
+    },
+  ],
   // blog setting (required)
   blog: {
     title: "OpenBMB Blog",
