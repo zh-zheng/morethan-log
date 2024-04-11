@@ -58,5 +58,6 @@ const StyledWrapper = styled.div`
   > article {
     margin: 0 auto;
     max-width: 56rem;
+    --notion-max-width: 56rem;
   }
 `
