@@ -63,5 +63,8 @@ const StyledWrapper = styled.div`
       display: flex;
       justify-content: center;
     }
+    > .notion-simple-table {
+      margin: 0 auto;
+    }
   }
 `
