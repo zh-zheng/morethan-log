@@ -60,13 +60,4 @@ const StyledWrapper = styled.div`
     max-width: 60rem;
     --notion-max-width: 60rem;
   }
-  :global {
-    .katex {
-      display: flex;
-      justify-content: center;
-    }
-    .notion-simple-table {
-      margin: 0 auto;
-    }
-  }
 `
