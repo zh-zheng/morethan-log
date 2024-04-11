@@ -59,12 +59,12 @@ const StyledWrapper = styled.div`
     margin: 0 auto;
     max-width: 60rem;
     --notion-max-width: 60rem;
-    :global(.katex) {
-      display: flex;
-      justify-content: center;
-    }
-    :global(.notion-simple-table) {
-      margin: 0 auto;
-    }
+  }
+  > .katex {
+    display: flex;
+    justify-content: center;
+  }
+  > .notion-simple-table {
+    margin: 0 auto;
   }
 `
