@@ -16,8 +16,8 @@ const CONFIG = {
       href: "https://github.com/OpenBMB/MiniCPM",
     },
     {
-      name: `OmniLMM`,
-      href: "https://github.com/OpenBMB/OmniLMM",
+      name: `MiniCPM-V`,
+      href: "https://github.com/OpenBMB/MiniCPM-V",
     },
   ],
   // blog setting (required)
