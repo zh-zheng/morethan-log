@@ -3,6 +3,7 @@ import { Hydrate, QueryClientProvider } from "@tanstack/react-query"
 import { RootLayout } from "src/layouts"
 import { queryClient } from "src/libs/react-query"
 import { Analytics } from '@vercel/analytics/react'
+import "../assets/css/notion.css"
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page) => page)
