@@ -4,7 +4,8 @@
 }
 
 table {
-  display: flex;
+  display: grid;
   width: 100%;
   overflow-x: auto;
+  justify-items: center;
 }
