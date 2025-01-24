@@ -4,7 +4,7 @@ const CONFIG = {
     name: "OpenBMB",
     image: "/OpenBMB_alpha.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Open Lab for Big Model Base",
-    bio: "Founded by ModelBest Inc. & TsinghuaNLP, aims to build foundation models and systems towards AGI.",
+    bio: "OpenBMB aims to build foundation models and systems towards AGI.",
     email: "openbmb@gmail.com",
     linkedin: "",
     github: "OpenBMB",
@@ -16,7 +16,7 @@ const CONFIG = {
       href: "https://github.com/OpenBMB/MiniCPM",
     },
     {
-      name: `MiniCPM-V`,
+      name: `MiniCPM-V/o`,
       href: "https://github.com/OpenBMB/MiniCPM-V",
     },
   ],
