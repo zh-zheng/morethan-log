@@ -6,6 +6,10 @@ export const customMapImageUrl = async (url: string, block: Block): Promise<stri
     throw new Error("URL can't be empty")
   }
 
+  if (url.startsWith('prod-files-secure')) {
+    return url
+  }
+
   if (url.startsWith('data:')) {
     return url
   }
@@ -13,20 +17,6 @@ export const customMapImageUrl = async (url: string, block: Block): Promise<stri
   // more recent versions of notion don't proxy unsplash images
   if (url.startsWith('https://images.unsplash.com')) {
     return url
-  }
-
-  if (url.startsWith('prod-files-secure')) {
-    try {
-      // 获取签名后的URL
-      const signedUrls = await getSignedFileUrls({
-        urls: [url],
-        blockId: block.id
-      });
-      return signedUrls[0];
-    } catch (error) {
-      console.error('Error getting signed URL:', error);
-      return url;
-    }
   }
 
   try {
