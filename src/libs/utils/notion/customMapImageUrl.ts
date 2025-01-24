@@ -1,6 +1,7 @@
 import { Block } from 'notion-types'
+import { getSignedFileUrls } from '@notionhq/client'
 
-export const customMapImageUrl = (url: string, block: Block): string => {
+export const customMapImageUrl = async (url: string, block: Block): Promise<string> => {
   if (!url) {
     throw new Error("URL can't be empty")
   }
@@ -12,6 +13,20 @@ export const customMapImageUrl = (url: string, block: Block): string => {
   // more recent versions of notion don't proxy unsplash images
   if (url.startsWith('https://images.unsplash.com')) {
     return url
+  }
+
+  if (url.startsWith('prod-files-secure')) {
+    try {
+      // 获取签名后的URL
+      const signedUrls = await getSignedFileUrls({
+        urls: [url],
+        blockId: block.id
+      });
+      return signedUrls[0];
+    } catch (error) {
+      console.error('Error getting signed URL:', error);
+      return url;
+    }
   }
 
   try {
